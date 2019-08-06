@@ -1,0 +1,15 @@
+#D FOUCHE
+#UCT CS3
+#FCHDYL001
+
+# Ignore any .o files
+build/*
+
+# Ignore any executables
+bin/*
+
+# Ignore macOS files
+.DS_Store
+
+#ignore audio files
+audio/*
