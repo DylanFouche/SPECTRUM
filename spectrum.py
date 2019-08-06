@@ -9,6 +9,7 @@ from scipy.fftpack import fft
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
+import traceback
 
 CHUNK = 44100*3
 RATE = 44100
@@ -49,7 +50,7 @@ def main():
 
 if __name__ == "__main__":
     if not len(sys.argv) in {2,3}:
-        print("Usage:\t python3 spectrum.py [filename1] <filename2>")
+        print("Usage:\t $python3 spectrum.py [filename1] <filename2>")
         quit()
     try:
         main()
@@ -58,5 +59,5 @@ if __name__ == "__main__":
         quit()
     except Exception as e:
         print("Some other error occurred:")
-        print(e.__name__)
+        print(traceback.print_exc())
         quit()
