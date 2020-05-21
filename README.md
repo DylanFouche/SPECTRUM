@@ -3,13 +3,13 @@
 A simple spectral analysis tool for python using fft.
 
 ## Usage
-```bash
+```
 $python3 spectrum.py [filename1] <filename2>
 ```
 ## Dependencies
 numpy, scipy, matplotlib
-```bash
-$pip install matplotlib numpy scipy
+```
+$pip3 install matplotlib numpy scipy
 ```
 
 ## Note 
